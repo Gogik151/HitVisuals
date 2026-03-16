@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hit Visuals | Download</title>
+    <meta
+      name="description"
+      content="Официальная страница скачивания Hit Visuals для Fabric 1.21.4."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__glow bg__glow--c"></div>
+    </div>
+
+    <main class="wrap">
+      <header class="hero">
+        <div class="hero__badge">Fabric • 1.21.4</div>
+        <h1 class="hero__title">Hit Visuals</h1>
+        <p class="hero__subtitle">
+          Клиентский мод с визуальными пресетами, удобным меню и дополнительными QoL-фишками.
+        </p>
+      </header>
+
+      <section class="card">
+        <div class="card__top">
+          <div>
+            <div class="card__kicker">Скачать</div>
+            <div class="card__name">hitvisuals-1.0.0.jar</div>
+            <div class="card__meta">
+              Требуется: Fabric Loader, Fabric API • Java 21
+            </div>
+          </div>
+          <a class="btn" href="files/hitvisuals-1.0.0.jar" download>
+            Скачать .jar
+          </a>
+        </div>
+
+        <div class="card__grid">
+          <div class="kv">
+            <div class="kv__k">Версия</div>
+            <div class="kv__v">1.0.0</div>
+          </div>
+          <div class="kv">
+            <div class="kv__k">Minecraft</div>
+            <div class="kv__v">1.21.4</div>
+          </div>
+          <div class="kv kv--mono">
+            <div class="kv__k">SHA-256</div>
+            <div class="kv__v" id="sha">413186379CAD36B769F5E54B8B2177CC5A8B535D615AAC91827B76EBE1EC1270</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__kicker">Установка</div>
+        <ol class="steps">
+          <li>Установи Fabric Loader под 1.21.4 и Fabric API.</li>
+          <li>Положи файл <span class="mono">hitvisuals-1.0.0.jar</span> в папку <span class="mono">mods</span>.</li>
+          <li>Запусти игру.</li>
+        </ol>
+        <p class="hint">
+          Совет: если обновляешься, удаляй старую версию мода из <span class="mono">mods</span> перед установкой новой.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__line">
+          <span class="dot"></span>
+          <span>Официальная выдача файла для скачивания.</span>
+        </div>
+      </footer>
+    </main>
+
+    <script src="site.js"></script>
+  </body>
+</html>
+
