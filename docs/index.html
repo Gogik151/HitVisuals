@@ -3,82 +3,195 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hit Visuals | Download</title>
-    <meta
-      name="description"
-      content="Официальная страница скачивания Hit Visuals для Fabric 1.21.4."
-    />
+    <title>Hit Visuals | Скачать</title>
+    <meta name="description" content="Официальная страница скачивания Hit Visuals для Fabric 1.21.4." />
+    <meta name="theme-color" content="#070c12" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="bg" aria-hidden="true">
-      <div class="bg__grid"></div>
-      <div class="bg__glow bg__glow--a"></div>
-      <div class="bg__glow bg__glow--b"></div>
-      <div class="bg__glow bg__glow--c"></div>
+      <div class="bg__noise"></div>
+      <div class="bg__rings"></div>
+      <div class="bg__scanlines"></div>
+      <div class="bg__flare bg__flare--a"></div>
+      <div class="bg__flare bg__flare--b"></div>
     </div>
 
-    <main class="wrap">
-      <header class="hero">
-        <div class="hero__badge">Fabric • 1.21.4</div>
-        <h1 class="hero__title">Hit Visuals</h1>
-        <p class="hero__subtitle">
-          Клиентский мод с визуальными пресетами, удобным меню и дополнительными QoL-фишками.
-        </p>
-      </header>
+    <header class="top">
+      <div class="top__inner">
+        <a class="brand" href="#download" aria-label="Hit Visuals">
+          <span class="brand__mark" aria-hidden="true">HV</span>
+          <span class="brand__text">
+            <span class="brand__name">Hit Visuals</span>
+            <span class="brand__meta">Fabric • Minecraft 1.21.4 • Java 21</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Навигация">
+          <a class="nav__link" href="#download">Скачать</a>
+          <a class="nav__link" href="#features">Функции</a>
+          <a class="nav__link" href="#install">Установка</a>
+        </nav>
+      </div>
+    </header>
 
-      <section class="card">
-        <div class="card__top">
-          <div>
-            <div class="card__kicker">Скачать</div>
-            <div class="card__name">hitvisuals-1.0.0.jar</div>
-            <div class="card__meta">
-              Требуется: Fabric Loader, Fabric API • Java 21
+    <main class="wrap">
+      <section class="hero" id="download">
+        <div class="hero__grid">
+          <div class="hero__left">
+            <div class="pill">Официальная страница скачивания</div>
+            <h1 class="h1">Визуальный контроль, который ощущается.</h1>
+            <p class="lead">
+              Клиентский мод для Fabric 1.21.4: пресеты частиц, меню настроек в игре, плавные анимации и
+              полезные визуальные улучшения.
+            </p>
+
+            <div class="cta">
+              <a
+                class="btn btn--primary"
+                id="downloadBtn"
+                href="files/hitvisuals-1.0.0.jar"
+                download
+                data-file="hitvisuals-1.0.0.jar"
+              >
+                Скачать Hit Visuals 1.0.0
+              </a>
+              <button class="btn btn--ghost" id="copyShaBtn" type="button">Скопировать SHA-256</button>
+            </div>
+
+            <div class="meta">
+              <div class="meta__item">
+                <div class="meta__k">Файл</div>
+                <div class="meta__v mono">hitvisuals-1.0.0.jar</div>
+              </div>
+              <div class="meta__item">
+                <div class="meta__k">Версия</div>
+                <div class="meta__v">1.0.0</div>
+              </div>
+              <div class="meta__item">
+                <div class="meta__k">Minecraft</div>
+                <div class="meta__v">1.21.4</div>
+              </div>
+              <div class="meta__item meta__item--wide">
+                <div class="meta__k">SHA-256 (клик, чтобы скопировать)</div>
+                <div class="meta__v mono mono--wrap" id="sha">
+                  413186379CAD36B769F5E54B8B2177CC5A8B535D615AAC91827B76EBE1EC1270
+                </div>
+              </div>
             </div>
           </div>
-          <a class="btn" href="files/hitvisuals-1.0.0.jar" download>
-            Скачать .jar
-          </a>
-        </div>
 
-        <div class="card__grid">
-          <div class="kv">
-            <div class="kv__k">Версия</div>
-            <div class="kv__v">1.0.0</div>
-          </div>
-          <div class="kv">
-            <div class="kv__k">Minecraft</div>
-            <div class="kv__v">1.21.4</div>
-          </div>
-          <div class="kv kv--mono">
-            <div class="kv__k">SHA-256</div>
-            <div class="kv__v" id="sha">413186379CAD36B769F5E54B8B2177CC5A8B535D615AAC91827B76EBE1EC1270</div>
+          <div class="hero__right" aria-hidden="true">
+            <div class="device">
+              <div class="device__frame">
+                <div class="device__screen">
+                  <div class="device__ui">
+                    <div class="device__tag">BUILD</div>
+                    <div class="device__title">HIT VISUALS</div>
+                    <div class="device__sub">download node</div>
+                  </div>
+                  <div class="pulse pulse--a"></div>
+                  <div class="pulse pulse--b"></div>
+                  <div class="pulse pulse--c"></div>
+                  <div class="sweep"></div>
+                </div>
+              </div>
+              <div class="device__pins">
+                <span class="pin"></span>
+                <span class="pin"></span>
+                <span class="pin"></span>
+                <span class="pin"></span>
+                <span class="pin"></span>
+                <span class="pin"></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="card">
-        <div class="card__kicker">Установка</div>
-        <ol class="steps">
-          <li>Установи Fabric Loader под 1.21.4 и Fabric API.</li>
-          <li>Положи файл <span class="mono">hitvisuals-1.0.0.jar</span> в папку <span class="mono">mods</span>.</li>
-          <li>Запусти игру.</li>
-        </ol>
-        <p class="hint">
-          Совет: если обновляешься, удаляй старую версию мода из <span class="mono">mods</span> перед установкой новой.
-        </p>
+      <section class="section" id="features">
+        <div class="section__head">
+          <h2 class="h2">Функции</h2>
+          <p class="section__sub">Аккуратный визуал и удобные настройки без лишнего мусора.</p>
+        </div>
+
+        <div class="tiles">
+          <article class="tile">
+            <div class="tile__top">
+              <div class="chip">Particles</div>
+              <div class="tile__title">Пресеты попаданий</div>
+            </div>
+            <p class="tile__text">Наборы эффектов и настройка визуала попаданий под свой стиль.</p>
+          </article>
+          <article class="tile">
+            <div class="tile__top">
+              <div class="chip">UI</div>
+              <div class="tile__title">Меню в игре</div>
+            </div>
+            <p class="tile__text">Настройки в клиенте, без ручных конфигов и лишних перезапусков.</p>
+          </article>
+          <article class="tile">
+            <div class="tile__top">
+              <div class="chip">Motion</div>
+              <div class="tile__title">Плавные анимации</div>
+            </div>
+            <p class="tile__text">Мягкие переходы и чистая подача, чтобы интерфейс ощущался современно.</p>
+          </article>
+          <article class="tile">
+            <div class="tile__top">
+              <div class="chip">QoL</div>
+              <div class="tile__title">Визуальные улучшения</div>
+            </div>
+            <p class="tile__text">Набор дополнительных улучшений, которые делают игру приятнее.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="install">
+        <div class="section__head">
+          <h2 class="h2">Установка</h2>
+          <p class="section__sub">Три шага, и мод в игре.</p>
+        </div>
+
+        <div class="panel">
+          <ol class="steps">
+            <li>Установи Fabric Loader под Minecraft 1.21.4.</li>
+            <li>Установи Fabric API (под ту же версию игры).</li>
+            <li>
+              Положи <span class="mono">hitvisuals-1.0.0.jar</span> в
+              <span class="mono">mods</span> и запусти игру.
+            </li>
+          </ol>
+
+          <div class="panel__actions">
+            <button class="btn btn--ghost btn--wide" id="copyModsPathBtn" type="button">
+              Скопировать путь к папке mods
+            </button>
+            <a class="btn btn--primary btn--wide" href="#download">Наверх к скачиванию</a>
+          </div>
+
+          <p class="note">
+            При обновлении: удали старый файл мода из <span class="mono">mods</span> и только потом ставь новый.
+          </p>
+        </div>
       </section>
 
       <footer class="footer">
-        <div class="footer__line">
-          <span class="dot"></span>
-          <span>Официальная выдача файла для скачивания.</span>
+        <div class="footer__inner">
+          <div class="footer__left">
+            <div class="footer__title">Hit Visuals</div>
+            <div class="footer__sub">Официальная выдача файла для скачивания.</div>
+          </div>
+          <div class="footer__right">
+            <a class="footer__link" href="#download">Скачать</a>
+            <a class="footer__link" href="#features">Функции</a>
+            <a class="footer__link" href="#install">Установка</a>
+          </div>
         </div>
       </footer>
     </main>
